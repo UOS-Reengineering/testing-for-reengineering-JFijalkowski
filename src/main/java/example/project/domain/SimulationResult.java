@@ -12,6 +12,7 @@ public class SimulationResult {
         snapshots = new ArrayList<>();
     }
 
+
     /**
      * Load the simulation result saved in a file.
      *

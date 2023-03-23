@@ -25,4 +25,5 @@ public class Snapshot {
                 && egoCarPos.equals(snapshot.egoCarPos)
                 && carInFrontPos.equals(snapshot.carInFrontPos);
     }
+
 }

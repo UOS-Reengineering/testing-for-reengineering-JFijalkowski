@@ -1,10 +1,9 @@
 package example.project;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-
 import example.project.domain.Scenario;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestSimulator {
 
@@ -17,7 +16,10 @@ public class TestSimulator {
 
     @Test
     public void testRun2() {
-        fail();
+        Simulator simulator = new Simulator("dummy");
+        Scenario scenario = new Scenario();
+        ADS ads = new ADS("dummy");
+        assertNull(simulator.run(scenario));
         // remove the above line and
         // complete a test case that calls `simulator.run(scenario, ads)` and verify if the result is null.
     }
